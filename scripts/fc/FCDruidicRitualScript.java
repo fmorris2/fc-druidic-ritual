@@ -12,6 +12,7 @@ import org.tribot.script.interfaces.Starting;
 import scripts.fc.framework.mission.Mission;
 import scripts.fc.framework.paint.FCPaintable;
 import scripts.fc.framework.script.FCMissionScript;
+import scripts.fc.missions.fc_druidic_ritual.FCDruidicRitual;
 
 @ScriptManifest(
 		authors     = { 
@@ -27,7 +28,7 @@ public class FCDruidicRitualScript extends FCMissionScript implements FCPaintabl
 	@Override
 	protected Queue<Mission> getMissions()
 	{
-		return new LinkedList<>(Arrays.asList());
+		return new LinkedList<>(Arrays.asList(new FCDruidicRitual(this)));
 	}
 
 	@Override
