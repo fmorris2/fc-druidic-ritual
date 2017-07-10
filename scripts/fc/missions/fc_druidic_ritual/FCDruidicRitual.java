@@ -73,5 +73,10 @@ public class FCDruidicRitual extends QuestScriptManager
 		return new LinkedList<>(Arrays.asList(new StartQuest(), new TurnInQuest(), new SanfewFirstDialogue(),
 				new SanfewSecondDialogue(), new DipMeats(), new TurnInQuest()));
 	}
+	
+	public String toString()
+	{
+		return "Druidic Ritual";
+	}
 
 }
