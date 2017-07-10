@@ -10,6 +10,7 @@ import scripts.fc.framework.requirement.Requirement;
 import scripts.fc.framework.script.FCMissionScript;
 import scripts.fc.framework.task.Task;
 import scripts.fc.missions.fc_druidic_ritual.data.DRRequirements;
+import scripts.fc.missions.fc_druidic_ritual.data.DRSettings;
 import scripts.fc.missions.fc_druidic_ritual.tasks.impl.DipMeats;
 import scripts.fc.missions.fc_druidic_ritual.tasks.impl.SanfewFirstDialogue;
 import scripts.fc.missions.fc_druidic_ritual.tasks.impl.SanfewSecondDialogue;
@@ -34,7 +35,7 @@ public class FCDruidicRitual extends QuestScriptManager
 	@Override
 	public boolean hasReachedEndingCondition()
 	{
-		return false;
+		return DRSettings.QUEST_COMPLETE.isValid();
 	}
 
 	@Override

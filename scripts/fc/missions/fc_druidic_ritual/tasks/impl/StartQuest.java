@@ -5,7 +5,7 @@ import scripts.fc.framework.task.ItemsRequiredTask;
 import scripts.fc.missions.fc_druidic_ritual.data.DRRequirements;
 import scripts.fc.missions.fc_druidic_ritual.data.DRSettings;
 
-public class StartQuest extends KaqeemexDialogue implements ItemsRequiredTask
+public class StartQuest extends KaqemeexDialogue implements ItemsRequiredTask
 {
 	private static final long serialVersionUID = 5281100886246320024L;
 	
