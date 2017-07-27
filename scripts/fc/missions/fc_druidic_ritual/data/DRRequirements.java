@@ -1,8 +1,5 @@
 package scripts.fc.missions.fc_druidic_ritual.data;
 
-import java.util.List;
-
-import scripts.fc.framework.mission.Mission;
 import scripts.fc.framework.quest.InvBankBool;
 import scripts.fc.framework.quest.InvBankBool.TYPE;
 import scripts.fc.framework.quest.Order;
@@ -29,23 +26,16 @@ public class DRRequirements extends ItemRequirement
 		return new ReqItem[]
 		{
 			new SingleReqItem(RAT_MEAT, 1, true, true)
-				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE_EQUALS).and(new InvBankBool(ENCHANTED_RAT, 1, TYPE.IN_ONE, false))),
+				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE).and(new InvBankBool(ENCHANTED_RAT, 1, TYPE.IN_ONE, false))),
 			
 			new SingleReqItem(BEAR_MEAT, 1, true, true)
-				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE_EQUALS).and(new InvBankBool(ENCHANTED_BEAR, 1, TYPE.IN_ONE, false))),
+				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE).and(new InvBankBool(ENCHANTED_BEAR, 1, TYPE.IN_ONE, false))),
 			
 			new SingleReqItem(CHICKEN, 1, true, true)
-				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE_EQUALS).and(new InvBankBool(ENCHANTED_CHICKEN, 1, TYPE.IN_ONE, false))),
+				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE).and(new InvBankBool(ENCHANTED_CHICKEN, 1, TYPE.IN_ONE, false))),
 			
 			new SingleReqItem(BEEF, 1, true, true)
-				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE_EQUALS).and(new InvBankBool(ENCHANTED_BEEF, 1, TYPE.IN_ONE, false))),	
+				.when(new SettingBool(FCDruidicRitual.SETTING, 2, true, Order.BEFORE).and(new InvBankBool(ENCHANTED_BEEF, 1, TYPE.IN_ONE, false))),	
 		};
 	}
-
-	@Override
-	public List<Mission> getReqMissions()
-	{
-		return null;
-	}
-
 }
