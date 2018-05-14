@@ -79,4 +79,9 @@ public class FCDruidicRitual extends QuestScriptManager
 		return "Druidic Ritual";
 	}
 
+	@Override
+	public int getQuestPointReward() {
+		return 4;
+	}
+
 }
